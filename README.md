@@ -1,12 +1,4 @@
----
-title: AI Patient Triage OpenEnv
-emoji: 🏥
-colorFrom: blue
-colorTo: green
-sdk: docker
-app_port: 7860
-pinned: false
----
+
 
 # AI Patient Triage & Routing System (OpenEnv + Multi-Agent + Real-Time Dashboard)
 
