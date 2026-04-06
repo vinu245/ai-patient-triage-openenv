@@ -291,3 +291,4 @@ Backend supports:
 - EHR history/allergies are integrated into doctor/risk decisions.
 - WebSocket pushes state, decisions, and metrics in real time.
 - Frontend is responsive and optimized for real-time monitoring.
+## Author : Vinutha S
