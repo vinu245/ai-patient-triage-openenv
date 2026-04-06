@@ -1,3 +1,13 @@
+---
+title: AI Patient Triage OpenEnv
+emoji: hospital
+colorFrom: blue
+colorTo: green
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # AI Patient Triage & Routing System (OpenEnv + Multi-Agent + Real-Time Dashboard)
 
 Production-grade, end-to-end hospital triage simulation with:
@@ -7,6 +17,29 @@ Production-grade, end-to-end hospital triage simulation with:
 - Real-time WebSocket streaming
 - React + Tailwind premium dashboard
 - Dockerized local and Hugging Face Spaces deployment paths
+
+## Deploy On Hugging Face Spaces (Docker)
+
+This repository is ready for a Docker Space.
+
+1. Create a new Space on Hugging Face:
+  - Select SDK: Docker
+  - Visibility: Public or Private (your choice)
+
+2. Set Space hardware (CPU Basic is fine for first run).
+
+3. Push this repository to the Space repository:
+
+```bash
+git remote add hf https://huggingface.co/spaces/<your-username>/ai-patient-triage-openenv
+git push hf main
+```
+
+4. Wait for the build to complete, then open your Space URL.
+
+Notes:
+- The app listens on port 7860, which matches Space requirements.
+- The root Dockerfile builds frontend assets and serves the app through FastAPI.
 
 ## 1. Architecture
 
